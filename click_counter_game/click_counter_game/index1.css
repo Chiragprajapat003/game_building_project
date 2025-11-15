@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  background: white;
+  border-radius: 20px;
+  padding: 40px 30px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+h1 {
+  color: #667eea;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  color: #999;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.score-section {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.score-box {
+  flex: 1;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 15px;
+  padding: 20px 15px;
+  color: white;
+}
+
+.score-box h2 {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  opacity: 0.9;
+}
+
+.score {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.timer-section {
+  margin-bottom: 30px;
+}
+
+.timer-section h2 {
+  color: #666;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+.timer {
+  color: #000000;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.button-section {
+  display: flex;
+  
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: capitalize;
+}
+
+.click-btn:active{
+  background: #4f08f5;
+  color: rgb(207, 26, 26);
+  font-size: 18px;
+}
+
+.click-btn:not(:disabled) {
+  background: #ff0000;
+  color: blue;
+}
+
+.click-btn:not(:disabled):hover {
+  background: #00ff59;
+  color: #1e00ff;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.click-btn:not(:disabled):active {
+  transform: translateY(0);
+}
+
+.click-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+z
+
+.start-btn {
+  background: linear-gradient(135deg, #0b36f4 0%, #764ba2 100%);
+  color: rgb(139, 0, 239);
+  background-color: aqua;
+}
+
+.start-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(16, 52, 213, 0.4);
+  background-color: #ff0000;
+  color: #00ff2a;
+}
+
+.start-btn:active {
+  transform: translateY(0);
+}
+
+.reset-btn,
+.reset\=btn {
+  background: #e1ff00;
+  color: rgb(255, 55, 0);
+}
+
+.reset-btn:hover,
+.reset\=btn:hover {
+  background: #00ff2a;
+  color: rgb(72, 0, 255);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
+}
+
+.reset-btn:active,
+.reset\=btn:active {
+  transform: translateY(0);
+}
+
+.status-message {
+  color: #666;
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.start-btn{
+  background-color: aqua;
+}
+
+#pauseButton{
+  position: relative;
+
+}
+
+#resumeButton{
+  display: none;
+}
+

@@ -1,0 +1,270 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(50, 47, 47);
+}
+
+.container{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+
+height: 90vw;
+margin-top: -vw;
+}
+h1{
+    display: flex;
+    justify-content: center;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+.color-display{
+    font-size: 2.3vw;
+    font-family: sans-serif;
+    
+    width: 40vw;
+    color: black;
+    background-color: white;
+}
+.message{
+    margin-top: -15vw;
+}
+.streak-section{
+    margin-top: -15vw;
+    display: flex;
+    gap: 5vw;
+}
+.streak-box{
+    
+    border-radius: 1vw;
+    height: 10vw;
+    background-color: rgb(68, 66, 65);
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    justify-content: center;
+    align-items: center;
+}
+h3{
+    background-color:  rgb(68, 66, 65);
+}
+
+.streak-number{
+     background-color:  rgb(68, 66, 65);
+     color: rgb(49, 167, 226);
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.controls{
+    margin-top: -15vw;
+    display: flex;
+    
+    width: 39vw;
+    justify-content: space-between;
+}
+.control-btn{
+    background-color: darkturquoise;
+    color: white;
+    
+}
+.mode-btn{
+     color: white;
+}
+.mode-btn-selected{
+    background-color: white;
+}
+
+.color-box-container{
+
+
+    position: absolute;
+    top: 100vw;
+gap: 1vw;
+
+    width: 40vw;
+    height: 20vw;
+    display: flex;
+    flex-direction: column;
+}
+.color-box{
+    border: 1px solid;
+    height: 9vw;
+width:13vw;
+border-radius: 1vw;
+background-color: white;
+} */
+
+/* ========== BASIC RESET ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ========== BODY ========== */
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #222, #000);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* ========== MAIN CONTAINER ========== */
+.container {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.15);
+  width: 90%;
+  max-width: 900px;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+/* ========== HEADER ========== */
+header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 5px 0;
+}
+
+#colorDisplay {
+  font-size: 1.5rem;
+  color: cyan;
+  text-shadow: 0 0 8px cyan;
+}
+
+/* ========== MESSAGE DISPLAY ========== */
+.message {
+  margin: 15px 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ffd166;
+  min-height: 24px;
+}
+
+/* ========== STREAK SECTION ========== */
+.streak-section {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.streak-box {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.1);
+}
+
+.streak-box h3 {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: #80ffea;
+}
+
+.streak-number {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* ========== BUTTONS ========== */
+.controls {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #333;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: cyan;
+  color: black;
+  box-shadow: 0 0 10px cyan;
+}
+
+.mode-btn.selected {
+  background: cyan;
+  color: black;
+  box-shadow: 0 0 10px cyan;
+}
+
+/* ========== COLOR BOXES ========== */
+.color-box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.color-box {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.color-box:hover {
+  transform: scale(1.07);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  #colorDisplay {
+    font-size: 1.1rem;
+  }
+
+  .streak-box {
+    width: 45%;
+  }
+
+  .controls {
+    gap: 10px;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
