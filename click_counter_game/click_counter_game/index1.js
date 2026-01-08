@@ -23,7 +23,7 @@ function loadContent(){
 
 function dataLoad(){
     
-    var  temp = localStorage.getItem('highScore');  //pheli baar agar local stirage -> return null otehrwise -> data;
+    var  temp = localStorage.getItem('highScore');  //pheli baar agar local storage -> return null otehrwise -> data;
     if(temp != null){
         high = parseInt(temp); //explicity type conversion .......
     }

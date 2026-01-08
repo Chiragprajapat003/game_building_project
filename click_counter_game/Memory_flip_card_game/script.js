@@ -162,7 +162,44 @@ function createCard(value){     // card kaa pura structure banaya haii via funct
     return card;
 }
 
-function displayValue(){
+function matchfound(card){
+
+card.classList.add(flipped);
+if (firstCard)
+
+}
+
+function displayValue(card){
+    if(firstCard == null){
+        firstCard == null;
+        return;
+    }
+
+    secondCard = card ;
+    movesEl.textContent = moves;
+
+    var a  = firstCard.querySelector.querySelector(.black);
+    console.log("a value is:" + a.textContent);
+
+    var b = secondCard.querySelector('.back');
+    console.log('b value is: ' + b.textContent);
+
+    if(a.textContent === b.textContent){
+        firstCard.classList.add('marked');
+        secondCard.classList.add('marked');
+        matchedPairs++;
+        pairsEl = matchedPairs;
+
+        if(matchedPairs == 9) {
+            alert('end game');
+        }
+        firstCard = null;
+        secondCard = null;
+    }else{
+        setTimeout(function () {
+            firstCard.classList
+        })
+    }
 
 }
 
